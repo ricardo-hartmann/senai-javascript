@@ -1,0 +1,19 @@
+no HTML:
+colocar id="" e nome="" no input. Também colocar required para campo obrigatório
+o nome será puxado pelo fot="" do label.
+
+Usar id para JavaScript e class para o CSS, não tem problema ter os dois no elemento.
+
+document.GetElementById("");
+addEventListener(""); registra todo e qualquer evento na página. Movimento, tecla, CLIQUE.
+ex.: btn.addEventListener("click, function");
+
+Uso da crase, para evitar monte de aspas ao misturar string com variável, Ex.:
+function form() {
+	alert(`nome: ${nome.value} \n email: ${email.value}`);
+}
+
+botão com type button e submit(para cadastro)
+type reset para apagar os campos (limpar)
+
+formCadastro (id do formulário) .addEventListener("submit", form);

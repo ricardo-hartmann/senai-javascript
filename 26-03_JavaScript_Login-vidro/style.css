@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: url('img/tommyvideo-abstract-1779422.png');
+    background-size: cover;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    flex: 0;
+    box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+header a {
+    padding: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: aqua;
+    transition: all 0.3s ease;
+    text-shadow: 0px 0px 20px aqua;;
+}
+
+header input {
+    position: absolute;
+    justify-content: center;
+    left: 36%;
+    padding: 8px;
+    width: 500px;
+    border-radius: 5px;
+    border: 0;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    width: 25px;
+    margin-left: 350px;
+    filter: invert(100%);
+}
+
+header img:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    flex: 1;
+}
+
+#formLogin {
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid rgb(255, 255, 255, 0.2); */
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.5);
+    margin-top: 220px;
+}
+
+#login input{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#btn {
+    padding: 8px;
+    width: 100px;
+    border: 0;
+    font-family: 'Trebuchet MS';
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    background-image: linear-gradient(to right, rgb(0, 225, 255), rgb(38, 16, 158));
+    color: white;
+}
+
+#btn:hover {
+    background-color: aqua; 
+    box-shadow: 0px 0px 8px 4px rgba(5, 2, 204, 0.7);
+    transition: all 0.2s ease;
+    transform: translateY(-3px);
+}
+
+#btn:active {
+    background-color: rgb(2, 164, 164);
+    box-shadow: 0px 0px 5px 2px rgb(2, 164, 164);
+    transform: translateY(2px);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+    box-shadow: -5px -5px 10px 4px rgba(0, 0, 0, 0.3)
+}

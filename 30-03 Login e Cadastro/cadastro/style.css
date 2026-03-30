@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 20px black;
+    flex: 0;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 25px;
+}
+
+header a:hover {
+    color: aqua;
+    transition: all 0.2s ease;
+    text-shadow: 0px 0px 10px aqua;
+}
+
+header p {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+#formCadastro a {
+    text-decoration: none;
+    color: grey;
+}
+
+#formCadastro a:hover {
+    color: aqua;
+    transition: all 0.2s ease;
+    text-shadow: 0px 0px 10px aqua;
+}
+
+#formCadastro {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    box-shadow: 5px 5px 17px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 250px;
+    margin-top: 130px;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+#formCadastro h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#formCadastro input {
+    background-color: rgb(27, 33, 56);
+    border: 0;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+#btnCadastrar {
+    padding: 8px;
+    width: 120px;
+    border: 0;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btnCadastrar:hover {
+    transition: all 0.3s ease;
+    background-color: rgb(27, 33, 56);
+    color: white;
+    cursor: pointer;
+}
+
+#formCadastro p {
+    text-align: center;
+}
+
+footer {
+    padding: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px -10px 20px black;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+}

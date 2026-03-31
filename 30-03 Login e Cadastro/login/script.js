@@ -1,43 +1,26 @@
-let formulario = document.getElementById("formCadastro");
+let formulario = document.getElementById("formLogin");
 
 formulario.addEventListener("submit", function(evento){
     evento.preventDefault(); //Evita que a página recarregue e que vaze os dados no URL
 
-    const nomeDigitado = document.getElementById("nome").value;
     const emailDigitado = document.getElementById("email").value;
     const senhaDigitada = document.getElementById("senha").value;
-    const confirmaSenhaDigitada = document.getElementById("confirma-senha").value;
-
-    if (senhaDigitada !== confirmaSenhaDigitada){
-        alert("As senhas são diferentes");
-        return;
-    }
-
 
     const listaUsuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-
     const usuarioJaExiste = listaUsuarios.find(function(usuario){
-        return usuario.email == emailDigitado;
+        return usuario.email === emailDigitado && usuario.senha === senhaDigitada;
     });
 
     if (usuarioJaExiste){
-        alert("Este e-mail já está cadsatrado!")
-        return;
+        alert("Login efetuado com sucesso!")
+
+        localStorage.setItem("usuarioLogado", JSON.stringify(usuarioJaExiste))
+        window.location.href = "../home/index.html"
+
+    } else {
+        alert("Credenciais inválidas!")
     }
-
-
-    const novoUsuario = {
-        nome: nomeDigitado,
-        email: emailDigitado,
-        senha: senhaDigitada,
-    }
-
-    listaUsuarios.push(novoUsuario)
-
-    console.log(listaUsuarios)
-
-    localStorage.setItem("usuarios", JSON.stringify(listaUsuarios))
 
     formulario.reset();
 
